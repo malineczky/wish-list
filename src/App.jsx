@@ -4,11 +4,12 @@ function App() {
     const [gifts, setGifts] = useState([]);
 
     useEffect(() => {
-        getGifts().then((data) => setGifts(data));
+        const controller = new AbortController();
+        getGifts(controller.signal).then((data) => setGifts(data));
     }, []);
 
     async function getGifts() {
-        const response = await fetch("http://localhost:3000/gifts");
+        const response = await fetch("http://localhost:3000/gifts", { signal });
         return await response.json();
     }
 
