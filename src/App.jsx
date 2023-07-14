@@ -5,10 +5,16 @@ function App() {
 
     useEffect(() => {
         const controller = new AbortController();
-        getGifts(controller.signal).then((data) => setGifts(data));
+        const signal = controller.signal;
+
+        getGifts(signal).then((data) => setGifts(data));
+
+        return () => {
+            controller.abort();
+        };
     }, []);
 
-    async function getGifts() {
+    async function getGifts(signal) {
         const response = await fetch("http://localhost:3000/gifts", { signal });
         return await response.json();
     }
