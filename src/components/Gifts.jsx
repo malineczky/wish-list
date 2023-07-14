@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Gifts() {
     const [gifts, setGifts] = useState([]);
@@ -33,6 +34,8 @@ function Gifts() {
                     <h2>{gift.name}</h2>
                     <p>{gift.description}</p>
                     <p>PLN {gift.price}</p>
+                    <Link to={`/edit-gift/${gift.id}`}>Edytuj</Link>
+                    <button>Rezerwuj</button>
                 </div>
             ))}
         </>
