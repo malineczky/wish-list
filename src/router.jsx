@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Gift from "./components/Gift";
+import AddGift from "./components/AddGift";
 
 const router = createBrowserRouter([
     {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
     {
         path: "edit-gift/:giftId",
         element: <Gift />,
+    },
+    {
+        path: "add-gift",
+        element: <AddGift />,
     },
 ]);
 

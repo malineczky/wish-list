@@ -33,7 +33,7 @@ function Gift() {
             <h1>{gift.name}</h1>
             <p>{gift.description}</p>
             <p>PLN {gift.price}</p>
-            <Link to={"/"}>Powrót</Link>
+            <Link to={"/"}>Cofnij</Link>
         </div>
     );
 }
