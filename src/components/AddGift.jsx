@@ -7,6 +7,19 @@ function AddGift() {
 
     function handleAddGift(event) {
         event.preventDefault();
+        addGift({ name, description, price });
+    }
+
+    async function addGift(data) {
+        const response = await fetch("http://localhost:3000/gifts", {
+            method: "post",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        return response.json();
     }
 
     return (
