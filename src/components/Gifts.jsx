@@ -33,8 +33,8 @@ function Gifts() {
                 >
                     <h2>{gift.name}</h2>
                     <p>{gift.description}</p>
-                    <p>PLN {gift.price}</p>
-                    <Link to={`/edit-gift/${gift.id}`}>Edytuj</Link>
+                    <p>Szacunkowa cena: PLN {gift.price}</p>
+                    <Link to={`/gift/${gift.id}`}>Zobacz</Link>
                     <button>Rezerwuj</button>
                 </div>
             ))}

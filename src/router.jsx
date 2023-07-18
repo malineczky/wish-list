@@ -9,7 +9,7 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "edit-gift/:giftId",
+        path: "gift/:giftId",
         element: <Gift />,
     },
     {

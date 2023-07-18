@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function AddGift() {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
 
-    function handleAddGift(event) {
+    const navigate = useNavigate();
+
+    async function handleAddGift(event) {
         event.preventDefault();
-        addGift({ name, description, price });
+        const gift = await addGift({ name, description, price });
+        navigate(`/gift/${gift.id}`);
     }
 
     async function addGift(data) {
@@ -57,6 +61,7 @@ function AddGift() {
                     />
                 </div>
                 <button type="submit">Zapisz</button>
+                <Link to={"/"}>Cofnij</Link>
             </form>
         </div>
     );

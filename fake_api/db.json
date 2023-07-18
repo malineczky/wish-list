@@ -1,13 +1,6 @@
 {
   "gifts": [
     {
-      "id": 1,
-      "name": "Zabawka interaktywna",
-      "description": "Kolorowa zabawka z dźwiękami i światełkami",
-      "price": 50,
-      "availability": true
-    },
-    {
       "id": 2,
       "name": "Klocki konstrukcyjne",
       "description": "Zestaw klocków do budowania i układania",
@@ -92,16 +85,16 @@
       "availability": true
     },
     {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
       "name": "Basen z kulkami",
       "description": "Suchy basen z kolorowymi piłkami/kulkami",
       "price": "250",
       "id": 16
+    },
+    {
+      "name": "Rowerek biegowy",
+      "description": "Rowerek bez pedałów uczący utrzymania równowagi",
+      "price": "250",
+      "id": 17
     }
   ]
 }
