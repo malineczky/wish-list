@@ -8,13 +8,6 @@
       "availability": true
     },
     {
-      "id": 3,
-      "name": "Miękka książeczka",
-      "description": "Miękka książka z obrazkami i opisami",
-      "price": 15,
-      "availability": true
-    },
-    {
       "id": 4,
       "name": "Puzzle edukacyjne",
       "description": "Zestaw puzzli z literami i cyframi",

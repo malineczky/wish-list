@@ -47,6 +47,7 @@ function Gift() {
             <h1>{gift.name}</h1>
             <p>{gift.description}</p>
             <p>Szacunkowa cena: PLN {gift.price}</p>
+            <Link to={`/edit-gift/${giftId}`}>Edytuj</Link>
             <button onClick={handleDelete}>Usuń</button>
             <Link to={"/"}>Cofnij</Link>
         </div>
