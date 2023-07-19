@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 function EditGift() {
     const { giftId } = useParams();
     const [gift, setGift] = useState(null);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const controller = new AbortController();
@@ -28,6 +30,25 @@ function EditGift() {
         });
     }
 
+    async function editProduct(id, data) {
+        const response = await fetch(`http://localhost:3000/gifts/${id}`, {
+            method: "put",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        return response.json();
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        editProduct(giftId, gift).then(() => {
+            navigate(`/gift/${giftId}`);
+        });
+    }
+
     if (!gift) {
         return <h2>Loader...</h2>;
     }
@@ -35,7 +56,7 @@ function EditGift() {
     return (
         <div>
             <h1>{gift.name} </h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nazwa: </label>
                     <input
@@ -68,6 +89,7 @@ function EditGift() {
                     />
                 </div>
                 <button type="submit">Zapisz</button>
+                <Link to={`/gift/${giftId}`}>Cofnij</Link>
             </form>
         </div>
     );

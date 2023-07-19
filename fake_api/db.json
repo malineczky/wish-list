@@ -3,7 +3,7 @@
     {
       "id": 2,
       "name": "Klocki konstrukcyjne",
-      "description": "Zestaw klocków do budowania i układania",
+      "description": "Zestaw klocków do budowania i układania. Mogą być magnetyczne, drewniane lub typu Lego.",
       "price": 120,
       "availability": true
     },
