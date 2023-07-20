@@ -7,6 +7,8 @@ import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function GiftCard({ name, price, id }) {
+    const [reserved, setReserved] = useState(false);
+
     return (
         <Card
             sx={{
@@ -28,7 +30,9 @@ export default function GiftCard({ name, price, id }) {
                 <Button size="small">
                     <Link to={`/gift/${id}`}>Zobacz więcej</Link>
                 </Button>
-                <Button size="small">Rezerwuj</Button>
+                <Button size="small" onClick={handleReservedButton}>
+                    Rezerwuj
+                </Button>
             </CardActions>
         </Card>
     );
