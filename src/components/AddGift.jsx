@@ -1,3 +1,4 @@
+import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -27,41 +28,57 @@ function AddGift() {
     }
 
     return (
-        <div>
+        <div className="form">
             <h1>Dodaj nowy prezent</h1>
-            <form onSubmit={handleAddGift}>
+            <form
+                onSubmit={handleAddGift}
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 10,
+                }}
+            >
                 <div>
-                    <label htmlFor="name">Nazwa</label>
-                    <input
-                        type="text"
+                    <TextField
                         id="name"
+                        label="Nazwa"
+                        variant="outlined"
                         value={name}
                         onChange={(event) => setName(event.target.value)}
                     />
                 </div>
                 <div>
-                    <label htmlFor="description">Opis</label>
-                    <textarea
-                        name="description"
+                    <TextField
                         id="description"
-                        cols="30"
-                        rows="10"
+                        label="Opis"
+                        variant="outlined"
                         value={description}
                         onChange={(event) => setDescription(event.target.value)}
-                    ></textarea>
+                        multiline
+                    />
                 </div>
                 <div>
-                    <label htmlFor="price">Szacunkowa cena</label>
-                    <input
+                    <TextField
                         type="number"
-                        name="price"
+                        variant="outlined"
+                        label="Szacunkowa cena"
                         id="price"
                         value={price}
                         onChange={(event) => setPrice(event.target.value)}
                     />
                 </div>
-                <button type="submit">Zapisz</button>
-                <Link to={"/"}>Cofnij</Link>
+                <div className="buttons">
+                    <Button type="onSubmit" variant="contained">
+                        <Link to={"/"}>Cofnij</Link>
+                    </Button>
+                    <Button
+                        type="onSubmit"
+                        variant="contained"
+                        className="button"
+                    >
+                        Zapisz
+                    </Button>
+                </div>
             </form>
         </div>
     );

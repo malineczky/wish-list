@@ -1,15 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
 a {
     text-decoration: none;
     color: inherit;
+
 }
+
+* {
+    font-family: 'Poppins';
+}
+
 
 body {
     background-image: url(assets/bgc-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: #6A1B9A
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+
 }
 
 .MuiToolbar-root {
-    background-color: #F7DBA7;
-    color: #6F6825;
+    background-color: #6A1B9A;
+    color: #fff;
+
+}
+
+.MuiContainer-root {
+    margin: 30px auto;
+    padding: 0px;
+
+}
+
+
+.form {
+
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+
+
 }

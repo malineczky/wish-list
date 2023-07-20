@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import GiftCard from "./GiftCard";
+import { Box } from "@mui/material";
 
 function Gifts() {
     const [gifts, setGifts] = useState([]);
@@ -21,7 +22,13 @@ function Gifts() {
     }
 
     return (
-        <>
+        <Box
+            sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-around",
+            }}
+        >
             {gifts.map((gift) => (
                 <GiftCard
                     name={gift.name}
@@ -30,7 +37,7 @@ function Gifts() {
                     id={gift.id}
                 />
             ))}
-        </>
+        </Box>
     );
 }
 

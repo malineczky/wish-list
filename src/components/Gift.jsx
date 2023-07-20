@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -43,13 +44,28 @@ function Gift() {
     }
 
     return (
-        <div>
+        <div className="form">
             <h1>{gift.name}</h1>
             <p>{gift.description}</p>
-            <p>Szacunkowa cena: PLN {gift.price}</p>
-            <Link to={`/edit-gift/${giftId}`}>Edytuj</Link>
-            <button onClick={handleDelete}>Usuń</button>
-            <Link to={"/"}>Cofnij</Link>
+            <p>{gift.price} PLN</p>
+            <div className="buttons">
+                <Button type="onSubmit" variant="contained" className="button">
+                    <Link to={`/edit-gift/${giftId}`}>Edytuj</Link>
+                </Button>
+
+                <Button
+                    onClick={handleDelete}
+                    type="onSubmit"
+                    variant="contained"
+                    className="button"
+                >
+                    Usuń
+                </Button>
+
+                <Button type="onSubmit" variant="contained" className="button">
+                    <Link to={"/"}>Cofnij</Link>
+                </Button>
+            </div>
         </div>
     );
 }

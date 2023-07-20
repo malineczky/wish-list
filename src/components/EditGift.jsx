@@ -1,3 +1,4 @@
+import { Button, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
@@ -54,42 +55,57 @@ function EditGift() {
     }
 
     return (
-        <div>
+        <div className="form">
             <h1>{gift.name} </h1>
-            <form onSubmit={handleSubmit}>
+            <form
+                className="form-container"
+                onSubmit={handleSubmit}
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 10,
+                }}
+            >
                 <div>
-                    <label htmlFor="name">Nazwa: </label>
-                    <input
-                        type="text"
-                        name="name"
+                    <TextField
                         id="name"
+                        name="name"
+                        label="Nazwa"
+                        variant="outlined"
                         value={gift.name}
                         onChange={handleUpdateInputs}
                     />
                 </div>
                 <div>
-                    <label htmlFor="description">Opis: </label>
-                    <textarea
-                        name="description"
+                    <TextField
                         id="description"
-                        cols="30"
-                        rows="10"
+                        name="description"
+                        label="Opis"
+                        variant="outlined"
                         value={gift.description}
                         onChange={handleUpdateInputs}
+                        multiline
                     />
                 </div>
                 <div>
-                    <label htmlFor="price">Szacunkowa cena: </label>
-                    <input
+                    <TextField
                         type="number"
                         name="price"
+                        variant="outlined"
+                        label="Szacunkowa cena"
                         id="price"
                         value={gift.price}
                         onChange={handleUpdateInputs}
                     />
                 </div>
-                <button type="submit">Zapisz</button>
-                <Link to={`/gift/${giftId}`}>Cofnij</Link>
+                <div className="buttons">
+                    <Button type="onSubmit" variant="contained">
+                        Zapisz
+                    </Button>
+                    <Button type="onSubmit" variant="contained">
+                        <Link to={`/gift/${giftId}`}>Cofnij</Link>
+                    </Button>
+                </div>
             </form>
         </div>
     );

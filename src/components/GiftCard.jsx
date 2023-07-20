@@ -8,13 +8,20 @@ import { Link } from "react-router-dom";
 
 export default function GiftCard({ name, price, id }) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card
+            sx={{
+                maxWidth: 345,
+                flexGrow: 1,
+                width: "100%",
+                mb: "30px",
+            }}
+        >
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Szacunkowa cena: {price} PLN
+                    {price} PLN
                 </Typography>
             </CardContent>
             <CardActions>
