@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import GiftCard from "./GiftCard";
 
 function Gifts() {
     const [gifts, setGifts] = useState([]);
@@ -23,20 +23,12 @@ function Gifts() {
     return (
         <>
             {gifts.map((gift) => (
-                <div
+                <GiftCard
+                    name={gift.name}
+                    price={`${gift.price}`}
                     key={gift.id}
-                    style={{
-                        border: "1px solid black",
-                        padding: "10px",
-                        margin: "10px",
-                    }}
-                >
-                    <h2>{gift.name}</h2>
-                    <p>{gift.description}</p>
-                    <p>Szacunkowa cena: PLN {gift.price}</p>
-                    <Link to={`/gift/${gift.id}`}>Zobacz</Link>
-                    <button>Rezerwuj</button>
-                </div>
+                    id={gift.id}
+                />
             ))}
         </>
     );

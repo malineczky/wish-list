@@ -28,7 +28,7 @@ function AddGift() {
 
     return (
         <div>
-            <h1>Dodaj prezent</h1>
+            <h1>Dodaj nowy prezent</h1>
             <form onSubmit={handleAddGift}>
                 <div>
                     <label htmlFor="name">Nazwa</label>

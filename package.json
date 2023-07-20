@@ -9,12 +9,14 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "api": "json-server -w ./fake_api/db.json"
-
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.13.7",
+    "@fontsource/poppins": "^5.0.5",
+    "@fontsource/roboto": "^5.0.5",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.1",
     "@supabase/supabase-js": "^2.26.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

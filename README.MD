@@ -11,3 +11,5 @@
 # Author:
 
 Aleksandra Malinka-Kot
+
+wstawienie zdjęcia na stronę
