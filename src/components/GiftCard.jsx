@@ -26,8 +26,6 @@ export default function GiftCard({ name, price, id, reserved }) {
         });
     };
 
-    console.log(id, reserved);
-
     return (
         <Card
             sx={{
