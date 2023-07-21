@@ -34,6 +34,7 @@ function Gifts() {
                     name={gift.name}
                     price={`${gift.price}`}
                     key={gift.id}
+                    reserved={gift.reserved}
                     id={gift.id}
                 />
             ))}

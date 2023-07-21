@@ -1,53 +1,10 @@
 {
   "gifts": [
     {
-      "id": 4,
-      "name": "Puzzle edukacyjne",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 20,
-      "availability": true
-    },
-    {
-      "id": 5,
-      "name": "Tablica kredowa",
-      "description": "MLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 40,
-      "availability": true
-    },
-    {
-      "id": 6,
       "name": "Trampolina",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 600,
-      "availability": true
-    },
-    {
-      "id": 7,
-      "name": "Instrument muzyczny",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 25,
-      "availability": true
-    },
-    {
-      "id": 8,
-      "name": "Kolorowanki",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 12,
-      "availability": true
-    },
-    {
-      "id": 9,
-      "name": "Piłka plażowa",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 15,
-      "availability": true
-    },
-    {
-      "id": 10,
-      "name": "Układanka",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla. ",
-      "price": 45,
-      "availability": true
+      "price": "600",
+      "id": 6,
+      "reserved": false
     },
     {
       "id": 11,
@@ -64,23 +21,30 @@
       "availability": true
     },
     {
-      "id": 13,
       "name": "Przytulanka",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 40,
-      "availability": true
+      "price": "40",
+      "id": 13,
+      "reserved": false,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.\n"
     },
     {
       "name": "Basen z kulkami",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
       "price": "250",
-      "id": 16
+      "id": 16,
+      "reserved": false
     },
     {
       "name": "Rowerek biegowy",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
       "price": "250",
       "id": 17
+    },
+    {
+      "name": "Piłka plażowa",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
+      "price": "15",
+      "reserved": false,
+      "id": 18
     }
   ]
 }

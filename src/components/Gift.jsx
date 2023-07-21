@@ -14,7 +14,10 @@ function Gift() {
         const controller = new AbortController();
         const signal = controller.signal;
 
-        getGift(giftId, signal).then((data) => setGift(data));
+        getGift(giftId, signal).then((data) => {
+            setGift(data);
+            console.log(data);
+        });
 
         return () => {
             controller.abort();

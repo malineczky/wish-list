@@ -1,11 +1,7 @@
 import Gifts from "./components/Gifts";
 
 function App() {
-    return (
-        <>
-            <Gifts />
-        </>
-    );
+    return <Gifts />;
 }
 
 export default App;

@@ -5,9 +5,28 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export default function GiftCard({ name, price, id }) {
-    const [reserved, setReserved] = useState(false);
+export default function GiftCard({ name, price, id, reserved }) {
+    const [isReserved, setIsReserved] = useState(reserved);
+
+    const handleReservedButton = async () => {
+        setIsReserved((prevIsReserved) => !prevIsReserved);
+        await fetch(`http://localhost:3000/gifts/${id}`, {
+            method: "put",
+            body: JSON.stringify({
+                name,
+                price,
+                id,
+                reserved: !isReserved,
+            }),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+    };
+
+    console.log(id, reserved);
 
     return (
         <Card
@@ -16,6 +35,7 @@ export default function GiftCard({ name, price, id }) {
                 flexGrow: 1,
                 width: "100%",
                 mb: "30px",
+                backgroundColor: isReserved ? "#5781BD" : "transparent",
             }}
         >
             <CardContent>

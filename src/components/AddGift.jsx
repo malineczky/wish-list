@@ -11,7 +11,12 @@ function AddGift() {
 
     async function handleAddGift(event) {
         event.preventDefault();
-        const gift = await addGift({ name, description, price });
+        const gift = await addGift({
+            name,
+            description,
+            price,
+            reserved: false,
+        });
         navigate(`/gift/${gift.id}`);
     }
 
@@ -23,7 +28,6 @@ function AddGift() {
                 "Content-Type": "application/json",
             },
         });
-
         return response.json();
     }
 

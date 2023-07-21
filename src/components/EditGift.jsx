@@ -10,7 +10,10 @@ function EditGift() {
 
     useEffect(() => {
         const controller = new AbortController();
-        getGift(giftId, controller.signal).then((data) => setGift(data));
+        getGift(giftId, controller.signal).then((data) => {
+            setGift(data);
+            console.log();
+        });
 
         return () => {
             controller.abort();
