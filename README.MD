@@ -8,7 +8,7 @@ _WishList_ is a web application that allows users to create and manage a wish li
 
 ## How to run the application
 
-The application has been deployed on the Firebase server: .... To run it locally, follow these steps:
+The application has been deployed on the Firebase server: https://wishlist-83f6c.web.app/ . To run it locally, follow these steps:
 
 1. Clone the repository with the application source code to your computer:
    git clone https://github.com/malineczky/wish-list.git
