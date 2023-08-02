@@ -1,17 +1,10 @@
 {
   "gifts": [
     {
-      "name": "Trampolina",
-      "price": "600",
-      "id": 6,
-      "reserved": false
-    },
-    {
-      "id": 11,
       "name": "Lalka",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 50,
-      "availability": true
+      "price": "50",
+      "id": 11,
+      "reserved": false
     },
     {
       "id": 12,
@@ -45,6 +38,13 @@
       "price": "15",
       "reserved": false,
       "id": 18
+    },
+    {
+      "name": "sa",
+      "description": "s",
+      "price": "3",
+      "reserved": false,
+      "id": 19
     }
   ]
 }
