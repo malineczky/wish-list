@@ -106,7 +106,7 @@ function EditGift() {
                         Zapisz
                     </Button>
                     <Button type="onSubmit" variant="contained">
-                        <Link to={`/gift/${giftId}`}>Cofnij</Link>
+                        <Link to={`/gift/${giftId}`}>Anuluj</Link>
                     </Button>
                 </div>
             </form>

@@ -1,17 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
-
 a {
     text-decoration: none;
     color: inherit;
 
 }
-
-* {
-    font-family: 'Poppins';
-}
-
-
-body {}
 
 h1 {
     color: #39567D;
@@ -21,9 +12,8 @@ h1 {
     display: flex;
     gap: 15px;
     justify-content: center;
-
-
 }
+
 
 .MuiToolbar-root {
     background-color: #334C70;
@@ -37,7 +27,6 @@ h1 {
 
 }
 
-
 .form {
 
     display: flex;
@@ -46,4 +35,8 @@ h1 {
     justify-content: space-between;
 
 
+}
+
+#root>div>div.MuiContainer-root.MuiContainer-maxWidthLg.MuiContainer-fixed.container.css-mtwdaa-MuiContainer-root>div>div>div>div.MuiCardContent-root.css-46bh2p-MuiCardContent-root>p:nth-child(3) {
+    margin-top: 15px;
 }

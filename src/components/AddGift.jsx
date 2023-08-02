@@ -72,15 +72,15 @@ function AddGift() {
                     />
                 </div>
                 <div className="buttons">
-                    <Button type="onSubmit" variant="contained">
-                        <Link to={"/"}>Cofnij</Link>
-                    </Button>
                     <Button
                         type="onSubmit"
                         variant="contained"
                         className="button"
                     >
                         Zapisz
+                    </Button>
+                    <Button type="onSubmit" variant="contained">
+                        <Link to={"/"}>Anuluj</Link>
                     </Button>
                 </div>
             </form>

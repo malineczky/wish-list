@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
 function Gift() {
     const { giftId } = useParams();
@@ -47,12 +51,30 @@ function Gift() {
     }
 
     return (
-        <div className="form">
-            <h1>{gift.name}</h1>
-            <p>{gift.description}</p>
-            <p>{gift.price} PLN</p>
-            <div className="buttons">
-                <Button type="onSubmit" variant="contained" className="button">
+        <Card
+            sx={{
+                maxWidth: 345,
+                flexGrow: 1,
+                width: "100%",
+                mb: "30px",
+            }}
+        >
+            <CardContent>
+                <h1>{gift.name}</h1>
+                <Typography variant="body2" color="text.secondary">
+                    {gift.description}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {gift.price} PLN
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <Button
+                    type="onSubmit"
+                    variant="contained"
+                    size="small"
+                    className="button"
+                >
                     <Link to={`/edit-gift/${giftId}`}>Edytuj</Link>
                 </Button>
 
@@ -61,15 +83,20 @@ function Gift() {
                     type="onSubmit"
                     variant="contained"
                     className="button"
+                    size="small"
                 >
                     Usuń
                 </Button>
-
-                <Button type="onSubmit" variant="contained" className="button">
-                    <Link to={"/"}>Cofnij</Link>
+                <Button
+                    type="onSubmit"
+                    variant="contained"
+                    size="small"
+                    className="button"
+                >
+                    <Link to={"/"}>Wróć</Link>
                 </Button>
-            </div>
-        </div>
+            </CardActions>
+        </Card>
     );
 }
 

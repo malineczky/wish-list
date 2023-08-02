@@ -4,7 +4,8 @@
       "name": "Lalka",
       "price": "50",
       "id": 11,
-      "reserved": false
+      "reserved": false,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! "
     },
     {
       "id": 12,
@@ -38,13 +39,6 @@
       "price": "15",
       "reserved": false,
       "id": 18
-    },
-    {
-      "name": "sa",
-      "description": "s",
-      "price": "3",
-      "reserved": false,
-      "id": 19
     }
   ]
 }
