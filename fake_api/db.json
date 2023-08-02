@@ -5,14 +5,13 @@
       "price": "40",
       "id": 13,
       "reserved": false,
-      "description": "Aliquam nec sem ut quam dictum auctor. Vivamus at ex quis risus congue pulvinar ac eu quam. Proin vel aliquam orci. Sed quis odio in dui lacinia elementum. Duis vehicula sagittis ligula, a dictum nisl scelerisque at. Sed in erat eget elit sagittis venenatis nec id justo. Nullam at purus ut est rhoncus laoreet. Integer a turpis eleifend, euismod felis nec, tincidunt ex."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum elementum mi, non gravida ex sagittis in. Nullam eget neque vel urna tincidunt bibendum. Sed eget ex vitae odio gravida ultricies. Nulla facilisi. Nunc non tristique ipsum, sit amet egestas felis. Duis eu tincidunt risus, eu dictum nisi."
     },
     {
       "name": "Basen z kulkami",
       "price": "250",
       "id": 16,
-      "reserved": false,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum felis nec bibendum interdum. Vivamus sollicitudin elit vel lacus cursus luctus. Sed vel eleifend mi. Curabitur maximus, orci sit amet consequat varius, neque risus ullamcorper lectus, nec consequat nisi turpis in lorem. Sed id turpis nulla. Nullam eu lectus ex. Nulla rhoncus sapien in quam iaculis, eu vulputate lorem bibendum. Quisque sagittis erat non velit gravida fringilla."
+      "reserved": false
     },
     {
       "name": "Rowerek biegowy",
@@ -31,8 +30,39 @@
       "name": "Kot",
       "price": "300",
       "id": 19,
+      "reserved": false
+    },
+    {
+      "name": "Klocki magnetyczne",
+      "price": "60",
+      "id": 31,
+      "reserved": true
+    },
+    {
+      "name": "Puzzle 1000 elementów",
+      "price": "35",
+      "id": 48,
+      "reserved": true
+    },
+    {
+      "name": "Zestaw do majsterkowania",
+      "price": "25",
+      "id": 53,
       "reserved": false,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum felis nec bibendum interdum. Vivamus sollicitudin elit vel lacus cursus luctus. Sed vel eleifend mi. Curabitur maximus, orci sit amet consequat varius, neque risus ullamcorper lectus, nec consequat nisi turpis in lorem. Sed id turpis nulla. Nullam eu lectus ex. Nulla rhoncus sapien in quam iaculis, eu vulputate lorem bibendum. Quisque sagittis erat non velit gravida fringilla."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante nec lacus tempus suscipit at in lacus. Sed tincidunt venenatis ex nec ultrices. Sed sed cursus arcu. Fusce sagittis augue non lorem fermentum, nec ullamcorper est fringilla. Cras ultrices eu odio ac dapibus."
+    },
+    {
+      "name": "Zestaw muzyczny dla dzieci",
+      "price": "40",
+      "id": 67,
+      "reserved": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur dolor sit amet mauris feugiat, quis finibus felis faucibus. Vivamus malesuada, dui ut bibendum consectetur, felis quam luctus mauris, ut eleifend quam erat ac nulla. In volutpat nisl ut scelerisque tincidunt."
+    },
+    {
+      "name": "Kolorowe piłki do skakania",
+      "price": "20",
+      "id": 72,
+      "reserved": false
     }
   ]
 }

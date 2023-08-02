@@ -33,7 +33,7 @@ export default function GiftCard({ name, price, id, reserved }) {
                 flexGrow: 1,
                 width: "100%",
                 mb: "30px",
-                backgroundColor: isReserved ? "#95afdb" : "transparent",
+                backgroundColor: isReserved ? "#97b8e3" : "transparent",
             }}
         >
             <CardContent>
@@ -45,10 +45,14 @@ export default function GiftCard({ name, price, id, reserved }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">
+                <Button size="small" variant="outlined">
                     <Link to={`/gift/${id}`}>Zobacz więcej</Link>
                 </Button>
-                <Button size="small" onClick={handleReservedButton}>
+                <Button
+                    size="small"
+                    onClick={handleReservedButton}
+                    variant="outlined"
+                >
                     Rezerwuj
                 </Button>
             </CardActions>
