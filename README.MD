@@ -1,5 +1,7 @@
 # WishList
 
+![](/screenshot.jpg)
+
 ## Description
 
 The "WishList" application is a desktop application that allows users to create and manage a gift list for invited guests at various events. With this application, organizers can add, edit, and delete gifts on the list, while guests can reserve the ones they plan to give.
