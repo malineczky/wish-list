@@ -1,44 +1,38 @@
 {
   "gifts": [
     {
-      "name": "Lalka",
-      "price": "50",
-      "id": 11,
-      "reserved": false,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! "
-    },
-    {
-      "id": 12,
-      "name": "Samochodzik",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
-      "price": 30,
-      "availability": true
-    },
-    {
       "name": "Przytulanka",
       "price": "40",
       "id": 13,
       "reserved": false,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.\n"
+      "description": "Aliquam nec sem ut quam dictum auctor. Vivamus at ex quis risus congue pulvinar ac eu quam. Proin vel aliquam orci. Sed quis odio in dui lacinia elementum. Duis vehicula sagittis ligula, a dictum nisl scelerisque at. Sed in erat eget elit sagittis venenatis nec id justo. Nullam at purus ut est rhoncus laoreet. Integer a turpis eleifend, euismod felis nec, tincidunt ex."
     },
     {
       "name": "Basen z kulkami",
       "price": "250",
       "id": 16,
-      "reserved": false
+      "reserved": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum felis nec bibendum interdum. Vivamus sollicitudin elit vel lacus cursus luctus. Sed vel eleifend mi. Curabitur maximus, orci sit amet consequat varius, neque risus ullamcorper lectus, nec consequat nisi turpis in lorem. Sed id turpis nulla. Nullam eu lectus ex. Nulla rhoncus sapien in quam iaculis, eu vulputate lorem bibendum. Quisque sagittis erat non velit gravida fringilla."
     },
     {
       "name": "Rowerek biegowy",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
       "price": "250",
-      "id": 17
+      "id": 17,
+      "reserved": false
     },
     {
       "name": "Piłka plażowa",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos harum architecto molestias! Labore id vero asperiores, aspernatur veniam eius maiores, laudantium doloribus consequuntur dolorem tenetur sapiente minima accusantium nulla.",
       "price": "15",
+      "id": 18,
       "reserved": false,
-      "id": 18
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum felis nec bibendum interdum. Vivamus sollicitudin elit vel lacus cursus luctus. Sed vel eleifend mi. Curabitur maximus, orci sit amet consequat varius, neque risus ullamcorper lectus, nec consequat nisi turpis in lorem. Sed id turpis nulla. Nullam eu lectus ex. Nulla rhoncus sapien in quam iaculis, eu vulputate lorem bibendum. Quisque sagittis erat non velit gravida fringilla."
+    },
+    {
+      "name": "Kot",
+      "price": "300",
+      "id": 19,
+      "reserved": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum felis nec bibendum interdum. Vivamus sollicitudin elit vel lacus cursus luctus. Sed vel eleifend mi. Curabitur maximus, orci sit amet consequat varius, neque risus ullamcorper lectus, nec consequat nisi turpis in lorem. Sed id turpis nulla. Nullam eu lectus ex. Nulla rhoncus sapien in quam iaculis, eu vulputate lorem bibendum. Quisque sagittis erat non velit gravida fringilla."
     }
   ]
 }

@@ -51,30 +51,18 @@ function Gift() {
     }
 
     return (
-        <Card
-            sx={{
-                maxWidth: 345,
-                flexGrow: 1,
-                width: "100%",
-                mb: "30px",
-            }}
-        >
+        <Card>
             <CardContent>
                 <h1>{gift.name}</h1>
                 <Typography variant="body2" color="text.secondary">
-                    {gift.description}
+                    {gift.price} PLN
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    {gift.price} PLN
+                    {gift.description}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button
-                    type="onSubmit"
-                    variant="contained"
-                    size="small"
-                    className="button"
-                >
+                <Button type="onSubmit" variant="contained" size="small">
                     <Link to={`/edit-gift/${giftId}`}>Edytuj</Link>
                 </Button>
 
@@ -82,17 +70,11 @@ function Gift() {
                     onClick={handleDelete}
                     type="onSubmit"
                     variant="contained"
-                    className="button"
                     size="small"
                 >
                     Usuń
                 </Button>
-                <Button
-                    type="onSubmit"
-                    variant="contained"
-                    size="small"
-                    className="button"
-                >
+                <Button type="onSubmit" variant="outlined" size="small">
                     <Link to={"/"}>Wróć</Link>
                 </Button>
             </CardActions>

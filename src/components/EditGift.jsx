@@ -103,10 +103,10 @@ function EditGift() {
                 </div>
                 <div className="buttons">
                     <Button type="onSubmit" variant="contained">
-                        Zapisz
-                    </Button>
-                    <Button type="onSubmit" variant="contained">
                         <Link to={`/gift/${giftId}`}>Anuluj</Link>
+                    </Button>{" "}
+                    <Button type="onSubmit" variant="contained">
+                        Zapisz
                     </Button>
                 </div>
             </form>

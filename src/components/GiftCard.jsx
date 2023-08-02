@@ -33,7 +33,7 @@ export default function GiftCard({ name, price, id, reserved }) {
                 flexGrow: 1,
                 width: "100%",
                 mb: "30px",
-                backgroundColor: isReserved ? "#EDEACC" : "transparent",
+                backgroundColor: isReserved ? "#95afdb" : "transparent",
             }}
         >
             <CardContent>
