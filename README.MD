@@ -29,6 +29,9 @@ The application has been deployed on the Firebase server: .... To run it locally
 
 ## Todo
 
+-   the functionality of booking a gift should be impossible to unlock by another user
+-   sorting gifts by available/reserved filter
+
 ## Technology used
 
 -   React
