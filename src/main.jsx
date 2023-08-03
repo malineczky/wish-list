@@ -5,6 +5,8 @@ import router from "./router.jsx";
 import { CssBaseline } from "@mui/material";
 import "../src/scss/index.scss";
 
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <CssBaseline />

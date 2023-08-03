@@ -8,12 +8,6 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum elementum mi, non gravida ex sagittis in. Nullam eget neque vel urna tincidunt bibendum. Sed eget ex vitae odio gravida ultricies. Nulla facilisi. Nunc non tristique ipsum, sit amet egestas felis. Duis eu tincidunt risus, eu dictum nisi."
     },
     {
-      "name": "Basen z kulkami",
-      "price": "250",
-      "id": 16,
-      "reserved": false
-    },
-    {
       "name": "Rowerek biegowy",
       "price": "250",
       "id": 17,
