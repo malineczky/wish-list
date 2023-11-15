@@ -4,7 +4,7 @@
 
 ## Description
 
-_WishList_ is a web application that allows users to create and manage a wish list for family and friends to get gift isnpiration. WishList alows to add, edit, and delete gifts on the list, while guests can reserve what they plan to give.
+_WishList_ is a web application that allows users to create and manage a wish list for family and friends to get gift isnpiration. WishList alows to add, edit, and delete gifts on the list, while guests can reserve what they plan to give. The application was created under the supervision of a mentor from Coders Lab.
 
 ## How to run the application
 
